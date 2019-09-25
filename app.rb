@@ -13,6 +13,15 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
+  end 
+  
+  get '/:operation/:number1/:number2' do 
+    @operation = params[:operation] 
+    @number1 = params[:number1] 
+    @number2 = params[:number2] 
+    
+    case @operation 
+  
   end
 
 end
