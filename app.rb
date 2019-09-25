@@ -21,6 +21,8 @@ class App < Sinatra::Base
     @number2 = params[:number2] 
     
     case @operation 
+    
+    
   
   end
 
