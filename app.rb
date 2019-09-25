@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end 
   
   get '/say/:number/:phrase' do 
-      @array = Array.new(params[:number], params[:phrase])
+      @array = Array.new(params[:number].to_i, params[:phrase])
       erb :say
   end
   
